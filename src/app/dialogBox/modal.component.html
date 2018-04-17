@@ -1,0 +1,18 @@
+<!-- Modal -->
+<div class="modal fade in show" id="myModal" role="dialog" [ngStyle]="{'display': dialogModal.showDialog }">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{dialogModal.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{dialogModal.body}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="closeModal()">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
